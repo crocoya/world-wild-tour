@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './style/CountryDetail.css';
@@ -7,14 +8,10 @@ export default function CountryDetail() {
   const { name } = useParams();
   const initialUrl = `https://restcountries.eu/rest/v2/name/${name}`;
 
-  React.useEffect(() => {
-    const fetchCountryData = async () => {
-      const res = await fetch(initialUrl);
-      const data = await res.json();
-      setCountry(data);
-      console.log(data);
-    };
-    fetchCountryData();
+  React.useEffect(async () => {
+    await axios.get(initialUrl).then((res) => {
+      setCountry(res.data);
+    });
   }, []);
 
   return (

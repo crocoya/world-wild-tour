@@ -19,7 +19,9 @@ export default function CountryCard({ country }) {
         <h5 className="country-capital">
           Capital : <span>{country.capital}</span>
         </h5>
-        <Link to={`/countries/${country.name}`}>Learn More</Link>
+        <Link to={`/countries/${country.name}`}>
+          <span>Learn More</span>
+        </Link>
       </div>
     </div>
   );
