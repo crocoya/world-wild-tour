@@ -1,9 +1,8 @@
-import RemoveMe from './components/RemoveMe';
 
 function App() {
   return (
     <div className="App">
-      <RemoveMe />
+      <h1>hello world</h1>
     </div>
   );
 }
