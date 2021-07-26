@@ -15,5 +15,5 @@ export default function CountryCard({ country }) {
 }
 
 CountryCard.propTypes = {
-  country: PropTypes.string.isRequired,
+  country: PropTypes.objectOf(PropTypes.array).isRequired,
 };
