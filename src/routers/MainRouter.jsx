@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import CountryDetail from '../components/country-detail/CountryDetail';
+import CountryPage from '../pages/CountryPage';
 import HomePage from '../pages/HomePage';
 
 export default function MainRouter() {
@@ -8,7 +8,7 @@ export default function MainRouter() {
     <Router>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/test" component={CountryDetail} />
+        <Route path="/countries/:name" component={CountryPage} />
       </Switch>
     </Router>
   );

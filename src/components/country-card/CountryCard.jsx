@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function CountryCard({ country }) {
   return (
@@ -18,6 +19,7 @@ export default function CountryCard({ country }) {
         <h5 className="country-capital">
           Capital : <span>{country.capital}</span>
         </h5>
+        <Link to={`/countries/${country.name}`}>Learn More</Link>
       </div>
     </div>
   );

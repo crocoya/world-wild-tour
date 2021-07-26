@@ -9,6 +9,10 @@
   margin: 2rem 2rem;
 }
 
+.country-detail__flag img {
+  width: 500px;
+}
+
 .country-detail__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
