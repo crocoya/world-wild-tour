@@ -20,7 +20,7 @@ export default function CountryCard({ country }) {
           Capital : <span>{country.capital}</span>
         </h5>
         <Link to={`/countries/${country.name}`}>
-          <span>Learn More</span>
+          <span className="country-more">Learn More</span>
         </Link>
       </div>
     </div>

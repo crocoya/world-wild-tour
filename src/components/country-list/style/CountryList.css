@@ -45,6 +45,12 @@
 .country-population,
 .country-region,
 .country-capital {
-  margin-top: 10px;
+  margin: 10px 0 20px 0;
   font-weight: 100;
+}
+
+.country-more {
+  background-color: hsl(207, 23%, 17%);
+  color: #fff;
+  padding: 0.5rem;
 }
