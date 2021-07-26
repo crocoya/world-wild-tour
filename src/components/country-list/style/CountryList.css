@@ -26,3 +26,15 @@
 .country__card:hover {
   transform: scale(1.1);
 }
+
+.country__flag {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+}
+
+.country__flag img {
+  width: 120px;
+  height: 120px;
+}
